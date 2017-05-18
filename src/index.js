@@ -89,6 +89,7 @@ class BigRegister extends EventEmitter {
     if (
       !data ||
       !data.hasOwnProperty('ListHcpApprox') ||
+      !data.ListHcpApprox ||
       !data.ListHcpApprox.hasOwnProperty('ListHcpApprox4') ||
       !(Array.isArray(data.ListHcpApprox.ListHcpApprox4) || data.ListHcpApprox.ListHcpApprox4.length === 0)
     ) {
