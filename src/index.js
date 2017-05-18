@@ -87,6 +87,7 @@ class BigRegister extends EventEmitter {
 
     // validate response data
     if (
+      !data ||
       !data.hasOwnProperty('ListHcpApprox') ||
       !data.ListHcpApprox.hasOwnProperty('ListHcpApprox4') ||
       !(Array.isArray(data.ListHcpApprox.ListHcpApprox4) || data.ListHcpApprox.ListHcpApprox4.length === 0)

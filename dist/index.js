@@ -120,6 +120,4 @@ class BigRegister extends _events.EventEmitter {
   }
 }
 
-module.exports = function (wsdl) {
-  return new BigRegister(wsdl);
-};
+module.exports = new BigRegister();
