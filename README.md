@@ -26,14 +26,14 @@ const bigRegister = require('bigregister-soap')
 bigRegister.connect()
 
 	// find user data by BIG-number
-	.then(() => bigRegister.findByRegistrationNumber('xxx')
+	.then(() => bigRegister.findByRegistrationNumber('xxx'))
 	.then((data) => {
-        // do something with data... 	
+        // do something with data...
 	})
-	
+
 	// catch errors
 	.catch((err) => {
-        // an error occurred	
+        // an error occurred
 	})
 ```
 
@@ -45,19 +45,19 @@ import bigRegister from 'bigregister-soap'
 
 const example = async() => {
     try {
-    	
+
     	// connect to SOAP server
     	await bigRegister.connect()
-    
+
     	// find user data by BIG-number
         const data = await bigRegisterApi.findByRegistrationNumber('xxx')
-        
+
         // do something with data
-        
+
     } catch(err) {
-        
+
         // an error occurred
-        
+
     }
 }
 ```
@@ -68,31 +68,30 @@ const example = async() => {
 
 	Method structure _(pseudo code)_:<br />
 	`BigRegister.connect(wsdl:String):Promise.<void>`
-	
+
 	> @note: it's not necessary to wait for resolving the promise, since each API method waits for this promise to be resolved.
-		
+
 	```javascript
 	const BigRegister = require('bigregister-soap')
-	
+
 	BigRegister.connect()
 		.then(() => console.log('connected'))
-		
+
 		.catch((err) => console.error(`An error occurred: ${err}`))
 	```
-	
-	
+
+
 - <u>Find user by BIG-number</u>:
 
 	Method structure _(pseudo code)_:<br />
 	`BigRegister.findByRegistrationNumber(bigNumber:String|Number): Promise.<Object>`
-	
+
 	```javascript
 	const BigRegister = require('bigregister-soap')
-	
+
 	BigRegister.connect()
 		.then(() => BigRegister.findByRegistrationNumber('xxx'))
 		.then((data) => console.log(data))
-		
+
 		.catch((err) => console.error(`An error occurred: ${err}`))
 	```
-	

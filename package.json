@@ -1,6 +1,6 @@
 {
   "name": "bigregister-soap",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "BIG-register SOAP wrapper",
   "main": "dist/index.js",
   "scripts": {
