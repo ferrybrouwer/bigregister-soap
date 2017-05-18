@@ -1,6 +1,6 @@
 {
   "name": "bigregister-soap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BIG-register SOAP wrapper",
   "main": "dist/index.js",
   "scripts": {
@@ -16,6 +16,10 @@
     "bignumber"
   ],
   "author": "Ferry Brouwer <ferry.brouwer@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferrybrouwer/bigregister-soap"
+  },
   "license": "ISC",
   "dependencies": {
     "soap": "^0.19.0"
