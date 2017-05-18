@@ -98,5 +98,5 @@ class BigRegister extends EventEmitter {
   }
 }
 
-module.exports = (wsdl) => new BigRegister(wsdl)
+module.exports = new BigRegister()
 
