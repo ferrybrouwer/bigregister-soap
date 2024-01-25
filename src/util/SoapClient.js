@@ -13,7 +13,7 @@ class SoapClient extends EventEmitter {
    * @constructor
    * @param {String} wsdl
    */
-  constructor(wsdl = 'http://webservices.cibg.nl/Ribiz/OpenbaarV4.asmx?wsdl') {
+  constructor(wsdl = 'https://api.bigregister.nl/zksrv/soap/4?wsdl') {
     super()
     this.wsdl = wsdl
   }
